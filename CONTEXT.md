@@ -150,7 +150,10 @@ user has approved the result** (see AGENTS.md server-shutdown rule).
   embedded as inline JSON so the page works over `file://` with no fetch. Defaults live in
   `DEFAULT_COST_INPUTS` (47.5M input + 2.5M output tokens, 95/5, 80% cached).
 - Pipeline green: `bun run check`, `bun test` (14 tests), `bun run typecheck`, `bun run build`.
-- `dist/` is generated and git-ignored. Repo is `git init`-ed (no commits yet).
+- `dist/` is generated and git-ignored.
+- Hosted on **GitHub Pages** (`https://rjpcomputing.github.io/ai-provider-comparison/`)
+  via `.github/workflows/deploy.yml`: CI rebuilds from `data/` and deploys `dist/` on every
+  push to `master`. Pages source must be set to "GitHub Actions".
 
 ## Known caveats / TODO
 

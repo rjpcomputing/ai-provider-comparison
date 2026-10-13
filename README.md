@@ -30,6 +30,16 @@ open dist/index.html # or: bun run dev  -> http://localhost:3000
 | `bun run typecheck` | `tsc --noEmit` across `src/` and `tests/`                           |
 | `bun run dev`       | Serve `dist/` on http://localhost:3000 and rebuild when `data/` changes |
 
+## Deployment
+
+The site is published to **GitHub Pages** by `.github/workflows/deploy.yml`. On every push
+to `master` (and on manual `workflow_dispatch`), CI installs with Bun, runs
+`bun run check`, `bun test`, `bun run typecheck` and `bun run build`, then deploys `dist/`
+with the official Pages actions. Generated output is never committed.
+
+- Live URL: <https://rjpcomputing.github.io/ai-provider-comparison/>
+- One-time setup: **Settings → Pages → Source: GitHub Actions**.
+
 ## Project layout
 
 ```

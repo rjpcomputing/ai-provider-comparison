@@ -32,6 +32,13 @@ bun run dev          # serve dist/ on :3000, rebuild on data/ change
 
 Before finishing any change, run: `bun run check && bun test && bun run typecheck && bun run build` — and confirm the README/CONTEXT provider & model counts still match.
 
+## Deployment
+
+Hosted on GitHub Pages at <https://rjpcomputing.github.io/ai-provider-comparison/>.
+`.github/workflows/deploy.yml` runs the full gate above and deploys `dist/` via the official
+Pages actions on every push to `master` (plus `workflow_dispatch`). Never commit `dist/`;
+the workflow rebuilds it. Pages source must be set to "GitHub Actions" in repo settings.
+
 ## Repo layout
 
 ```
