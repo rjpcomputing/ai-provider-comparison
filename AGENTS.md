@@ -25,6 +25,7 @@ backend. Monthly refresh = edit JSON → `bun run build`.
 bun install          # install deps
 bun run build        # validate data + render dist/ + bundle dist/app.js
 bun run check        # validate data only (no output)
+bun run refresh      # diff model prices vs live feeds (dry-run; -- --write applies)
 bun test             # data integrity tests
 bun run typecheck    # tsc --noEmit
 bun run dev          # serve dist/ on :3000, rebuild on data/ change
@@ -53,6 +54,8 @@ src/
   build.ts            # build entrypoint -> dist/
   validate.ts         # validation-only entrypoint
   serve.ts            # dev server (Bun.serve), watches data/
+  refresh.ts          # auto-refresh model prices from live feeds (CLI)
+  feeds/              # feed adapters: modelsdev.ts, openrouter.ts, litellm.ts
   client/main.ts      # table sort/filter, bundled to dist/app.js
 public/styles.css     # styles (copied to dist/)
 tests/data.test.ts    # data integrity tests

@@ -19,7 +19,8 @@ Compare AI coding providers — GitHub Copilot, Anthropic Claude, Cursor, OpenAI
 - a blended input/output token-mix → estimated $/month cost calculator
 
 The site is regenerated from `data/*.json`, so the monthly maintenance task is: edit the
-JSON, bump `meta.lastUpdated`, run `bun run build`.
+JSON (or run `bun run refresh` for model prices), bump `meta.lastUpdated`, run
+`bun run build`.
 
 ## Stack decisions (and why)
 
@@ -55,6 +56,10 @@ src/client/main.ts ──Bun.build──▶ dist/app.js ; public/styles.css ─�
 - `src/render.ts` — HTML builders; `renderSite(data)` and `renderDataJson(data)`.
 - `src/build.ts` — orchestrates load → render → write → bundle → copy.
 - `src/validate.ts` — load-only, prints counts, exits non-zero on failure.
+- `src/refresh.ts` — CLI that diffs `data/models.json` against live pricing feeds
+  (models.dev canonical, OpenRouter + LiteLLM cross-check) and optionally applies the
+  changes; `src/feeds/` holds the three feed adapters (Bun `fetch`, normalized to
+  `FeedModel { inputPerMtok, outputPerMtok, cachedInputPerMtok, contextTokens }`).
 - `src/serve.ts` — `Bun.serve` static server + `fs.watch` rebuild; path-traversal guarded.
 
 ## Data model
@@ -99,9 +104,16 @@ src/client/main.ts ──Bun.build──▶ dist/app.js ; public/styles.css ─�
   "availableVia": ["anthropic-api", "opencode-zen", "github-copilot", "cursor"],
   "reasoningLevel": "versatile",
   "countryOfOrigin": "US",
-  "notes": "optional"
+  "notes": "optional",
+  "sourceId": "models.dev:anthropic/claude-opus-5-5"  // optional; enables auto-refresh
 }
 ```
+
+`sourceId` is the machine-usable pointer to the canonical pricing-feed entry. Only models
+with a `sourceId` are refreshed automatically; the display name is intentionally NOT
+slugified into a feed key because that is lossy (`GPT-6.1 Sol` → `gpt-6-1-sol` vs the
+correct feed key `gpt-6.1-sol`). Models without one are reported as "UNMAPPED" by
+`bun run refresh` rather than guessed.
 
 ### `data/meta.json`
 
@@ -126,12 +138,15 @@ they aren't directly comparable.
 
 ## Monthly update workflow
 
-1. Edit `data/providers.json` (prices, `includedUsage`, `limits`, pros/cons, models).
-2. Edit `data/models.json` (`inputPerMtok` / `outputPerMtok` / `cachedInputPerMtok`,
-   `contextTokens`).
-3. Bump `data/meta.json` → `lastUpdated`; add new `sources`.
-4. `bun run check` then `bun run build`.
-5. Open `dist/index.html` (or deploy `dist/`).
+1. `bun run refresh` (dry-run) — pull updated token prices / context for sourced models and
+   see the cross-feed diff; `bun run refresh -- --write` applies it and bumps `lastUpdated`.
+2. Edit `data/providers.json` (prices, `includedUsage`, `limits`, pros/cons, models) — still
+   a human decision; there is no reliable feed for subscription tiers.
+3. Edit `data/models.json` for anything refresh can't cover (new models, notes, the long-context
+   reminder rows, non-sourced models).
+4. Bump `data/meta.json` → `lastUpdated`; add new `sources`.
+5. `bun run check` then `bun run build`.
+6. Open `dist/index.html` (or deploy `dist/`).
 
 `bun run dev` rebuilds automatically on `data/` changes. **Shut the server down once the
 user has approved the result** (see AGENTS.md server-shutdown rule).
@@ -141,6 +156,9 @@ user has approved the result** (see AGENTS.md server-shutdown rule).
 - 7 providers seeded: `github-copilot`, `anthropic-claude`, `cursor`, `openai-chatgpt`,
   `google-gemini`, `xai-grok`, `opencode`.
 - 40 models seeded across Anthropic / OpenAI / Google / xAI / Z.ai / Moonshot AI / MiniMax labs.
+- 37 models carry a `sourceId` (refreshable); 3 are intentionally unmapped:
+  `Gemini 3.1 Pro (>200k)` (a model.dev tier variant), `Gemini 3.1 Flash` and `Kimi K2.5`
+  (no exact feed entry).
 - Every provider `primaryModels` entry resolves to a `model` row in `data/models.json`.
 - **Cost calculator** (`#cost-calculator`, always visible):
   monthly token volume + input/output ratio slider + cached-input slider, with an
@@ -149,7 +167,7 @@ user has approved the result** (see AGENTS.md server-shutdown rule).
   cheapest. Model pricing is
   embedded as inline JSON so the page works over `file://` with no fetch. Defaults live in
   `DEFAULT_COST_INPUTS` (47.5M input + 2.5M output tokens, 95/5, 80% cached).
-- Pipeline green: `bun run check`, `bun test` (14 tests), `bun run typecheck`, `bun run build`.
+- Pipeline green: `bun run check`, `bun test` (24 tests), `bun run typecheck`, `bun run build`.
 - `dist/` is generated and git-ignored.
 - Hosted on **GitHub Pages** (`https://rjpcomputing.github.io/ai-provider-comparison/`)
   via `.github/workflows/deploy.yml`: CI rebuilds from `data/` and deploys `dist/` on every
@@ -160,6 +178,10 @@ user has approved the result** (see AGENTS.md server-shutdown rule).
 - **Verify flagged numbers each month.** OpenAI "Go" pricing and current GPT/Gemini model
   IDs and rates are seeded from vendor pages at time of writing and flagged in `notes`;
   re-check before trusting them.
+- **`bun run refresh` is opinionated, review the diff.** Cross feeds disagree for some
+  non-frontier models (OpenRouter resale prices for GLM/Kimi, LiteLLM context numbers
+  differ) — those disagreements block `--write` until reviewed. models.dev is treated as
+  canonical; LiteLLM values are sometimes a regional/provider markup.
 - Consumer plan "usage" is expressed in vendor-specific shapes; do not convert to tokens.
 - xAI does not publish SuperGrok Lite (~$10) or SuperGrok Heavy ($300) prices; both are
   seeded from third-party figures and flagged in `notes`.

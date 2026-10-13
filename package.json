@@ -8,6 +8,7 @@
     "build": "bun run src/build.ts",
     "check": "bun run src/validate.ts",
     "dev": "bun run src/serve.ts",
+    "refresh": "bun run src/refresh.ts",
     "test": "bun test",
     "typecheck": "tsc --noEmit"
   },

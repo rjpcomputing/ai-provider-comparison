@@ -62,6 +62,7 @@ export const modelSchema = z.object({
   reasoningLevel: reasoningLevelSchema,
   countryOfOrigin: countryOfOriginSchema.default("US"),
   notes: z.string().optional(),
+  sourceId: z.string().optional(),
 });
 
 export const metaSchema = z.object({

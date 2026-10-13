@@ -13,7 +13,8 @@
       "cursor"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "powerful"
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:anthropic/claude-opus-4-7"
   },
   {
     "model": "Claude Sonnet 4.6",
@@ -29,7 +30,8 @@
       "cursor"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:anthropic/claude-sonnet-4-6"
   },
   {
     "model": "Claude Haiku 4.5",
@@ -44,7 +46,8 @@
       "github-copilot"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "lightweight"
+    "reasoningLevel": "lightweight",
+    "sourceId": "models.dev:anthropic/claude-haiku-4-5"
   },
   {
     "model": "Claude Opus 5.5",
@@ -60,7 +63,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "powerful"
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:anthropic/claude-opus-5-5"
   },
   {
     "model": "Claude Sonnet 5.5",
@@ -76,7 +80,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:anthropic/claude-sonnet-5-5"
   },
   {
     "model": "Claude Fable 5.1",
@@ -91,7 +96,8 @@
       "cursor"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "specialized"
+    "reasoningLevel": "specialized",
+    "sourceId": "models.dev:anthropic/claude-fable-5-1"
   },
   {
     "model": "Claude Opus 5",
@@ -106,7 +112,8 @@
       "cursor"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "powerful"
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:anthropic/claude-opus-5"
   },
   {
     "model": "Claude Sonnet 5",
@@ -121,7 +128,8 @@
       "cursor"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:anthropic/claude-sonnet-5"
   },
   {
     "model": "Claude Haiku 5.5",
@@ -137,7 +145,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "lightweight"
+    "reasoningLevel": "lightweight",
+    "sourceId": "models.dev:anthropic/claude-haiku-5-5"
   },
   {
     "model": "GPT-6 Astra",
@@ -153,7 +162,8 @@
     ],
     "notes": "Top reasoning model; powers ChatGPT Pro.",
     "countryOfOrigin": "US",
-    "reasoningLevel": "powerful"
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:openai/gpt-6-astra"
   },
   {
     "model": "GPT-6 Sol",
@@ -168,7 +178,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:openai/gpt-6-sol"
   },
   {
     "model": "GPT-6.1 Sol",
@@ -183,7 +194,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:openai/gpt-6.1-sol"
   },
   {
     "model": "GPT-6 Luna",
@@ -198,7 +210,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "lightweight"
+    "reasoningLevel": "lightweight",
+    "sourceId": "models.dev:openai/gpt-6-luna"
   },
   {
     "model": "GPT-5.6 Sol",
@@ -214,7 +227,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "powerful"
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:openai/gpt-5.6-sol"
   },
   {
     "model": "GPT-5.6 Terra",
@@ -230,7 +244,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:openai/gpt-5.6-terra"
   },
   {
     "model": "GPT-5.6 Luna",
@@ -246,7 +261,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "lightweight"
+    "reasoningLevel": "lightweight",
+    "sourceId": "models.dev:openai/gpt-5.6-luna"
   },
   {
     "model": "GPT-5.5",
@@ -262,7 +278,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "powerful"
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:openai/gpt-5.5"
   },
   {
     "model": "GPT-5.3-Codex",
@@ -279,7 +296,8 @@
     ],
     "notes": "Coding-specialized model.",
     "countryOfOrigin": "US",
-    "reasoningLevel": "specialized"
+    "reasoningLevel": "specialized",
+    "sourceId": "models.dev:openai/gpt-5.3-codex"
   },
   {
     "model": "Gemini 3.1 Pro",
@@ -295,7 +313,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:google/gemini-3.1-pro-preview"
   },
   {
     "model": "Gemini 3.1 Pro (>200k)",
@@ -328,7 +347,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:google/gemini-3.8-flash"
   },
   {
     "model": "Gemini 3.7 Flash",
@@ -344,7 +364,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:google/gemini-3.7-flash"
   },
   {
     "model": "Gemini 3.6 Flash",
@@ -360,7 +381,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:google/gemini-3.6-flash"
   },
   {
     "model": "Gemini 3.5 Flash",
@@ -376,7 +398,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:google/gemini-3.5-flash"
   },
   {
     "model": "Gemini 3.1 Flash-Lite",
@@ -391,7 +414,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "lightweight"
+    "reasoningLevel": "lightweight",
+    "sourceId": "models.dev:google/gemini-3.1-flash-lite"
   },
   {
     "model": "Gemini 3 Flash",
@@ -407,7 +431,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:google/gemini-3-flash-preview"
   },
   {
     "model": "Gemini 3.1 Flash",
@@ -441,7 +466,8 @@
     ],
     "notes": "Long-context (>=200k) re-prices the entire request at $4/$12.",
     "countryOfOrigin": "US",
-    "reasoningLevel": "powerful"
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:xai/grok-4.7"
   },
   {
     "model": "Grok 4.6",
@@ -458,7 +484,8 @@
     ],
     "notes": "Long-context (>=200k) re-prices the entire request at $4/$12.",
     "countryOfOrigin": "US",
-    "reasoningLevel": "powerful"
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:xai/grok-4.6"
   },
   {
     "model": "Grok 4.5",
@@ -474,7 +501,8 @@
     ],
     "notes": "Long-context (>=200k) re-prices the entire request at $4/$12.",
     "countryOfOrigin": "US",
-    "reasoningLevel": "powerful"
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:xai/grok-4.5"
   },
   {
     "model": "Grok Build 0.1",
@@ -489,7 +517,8 @@
     ],
     "notes": "Coding-agent model.",
     "countryOfOrigin": "US",
-    "reasoningLevel": "specialized"
+    "reasoningLevel": "specialized",
+    "sourceId": "models.dev:xai/grok-build-0.1"
   },
   {
     "model": "Grok 4.3",
@@ -503,7 +532,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "US",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:xai/grok-4.3"
   },
   {
     "model": "GLM 5.3",
@@ -516,7 +546,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "China",
-    "reasoningLevel": "powerful"
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:zai/glm-5.3"
   },
   {
     "model": "GLM 5.3 Flash",
@@ -529,7 +560,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "China",
-    "reasoningLevel": "lightweight"
+    "reasoningLevel": "lightweight",
+    "sourceId": "models.dev:zai/glm-5.3-flash"
   },
   {
     "model": "GLM 5",
@@ -542,7 +574,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "China",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:zai/glm-5"
   },
   {
     "model": "Kimi K3",
@@ -555,7 +588,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "China",
-    "reasoningLevel": "powerful"
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:moonshotai/kimi-k3"
   },
   {
     "model": "Kimi K2.7 Code",
@@ -568,7 +602,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "China",
-    "reasoningLevel": "versatile"
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:moonshotai/kimi-k2.7-code"
   },
   {
     "model": "Kimi K2.5",
@@ -594,7 +629,8 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "China",
-    "reasoningLevel": "lightweight"
+    "reasoningLevel": "lightweight",
+    "sourceId": "models.dev:minimax/MiniMax-M3"
   },
   {
     "model": "MiniMax M2.5",
@@ -607,6 +643,7 @@
       "opencode-zen"
     ],
     "countryOfOrigin": "China",
-    "reasoningLevel": "lightweight"
+    "reasoningLevel": "lightweight",
+    "sourceId": "models.dev:minimax/MiniMax-M2.5"
   }
 ]
