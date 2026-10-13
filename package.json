@@ -1,0 +1,21 @@
+{
+  "name": "ai-provider-compare",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Data-driven comparison of AI providers: pricing, included usage, primary models, and per-token costs. Update the JSON data monthly and rebuild.",
+  "scripts": {
+    "build": "bun run src/build.ts",
+    "check": "bun run src/validate.ts",
+    "dev": "bun run src/serve.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.3",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,612 @@
+[
+  {
+    "model": "Claude Opus 4.7",
+    "lab": "Anthropic",
+    "inputPerMtok": 5,
+    "outputPerMtok": 25,
+    "cachedInputPerMtok": 0.5,
+    "contextTokens": 200000,
+    "availableVia": [
+      "anthropic-api",
+      "opencode-zen",
+      "github-copilot",
+      "cursor"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "lab": "Anthropic",
+    "inputPerMtok": 3,
+    "outputPerMtok": 15,
+    "cachedInputPerMtok": 0.3,
+    "contextTokens": 200000,
+    "availableVia": [
+      "anthropic-api",
+      "opencode-zen",
+      "github-copilot",
+      "cursor"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Claude Haiku 4.5",
+    "lab": "Anthropic",
+    "inputPerMtok": 1,
+    "outputPerMtok": 5,
+    "cachedInputPerMtok": 0.1,
+    "contextTokens": 200000,
+    "availableVia": [
+      "anthropic-api",
+      "opencode-zen",
+      "github-copilot"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "lightweight"
+  },
+  {
+    "model": "Claude Opus 5.5",
+    "lab": "Anthropic",
+    "inputPerMtok": 4,
+    "outputPerMtok": 20,
+    "cachedInputPerMtok": 0.2,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "anthropic-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "Claude Sonnet 5.5",
+    "lab": "Anthropic",
+    "inputPerMtok": 2,
+    "outputPerMtok": 10,
+    "cachedInputPerMtok": 0.1,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "anthropic-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Claude Fable 5.1",
+    "lab": "Anthropic",
+    "inputPerMtok": 10,
+    "outputPerMtok": 50,
+    "cachedInputPerMtok": 0.25,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "anthropic-api",
+      "github-copilot",
+      "cursor"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "specialized"
+  },
+  {
+    "model": "Claude Opus 5",
+    "lab": "Anthropic",
+    "inputPerMtok": 5,
+    "outputPerMtok": 25,
+    "cachedInputPerMtok": 0.5,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "anthropic-api",
+      "github-copilot",
+      "cursor"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "Claude Sonnet 5",
+    "lab": "Anthropic",
+    "inputPerMtok": 2,
+    "outputPerMtok": 10,
+    "cachedInputPerMtok": 0.2,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "anthropic-api",
+      "github-copilot",
+      "cursor"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Claude Haiku 5.5",
+    "lab": "Anthropic",
+    "inputPerMtok": 0.1,
+    "outputPerMtok": 0.5,
+    "cachedInputPerMtok": 0.01,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "anthropic-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "lightweight"
+  },
+  {
+    "model": "GPT-6 Astra",
+    "lab": "OpenAI",
+    "inputPerMtok": 10,
+    "outputPerMtok": 50,
+    "cachedInputPerMtok": 1,
+    "contextTokens": 1050000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "opencode-zen"
+    ],
+    "notes": "Top reasoning model; powers ChatGPT Pro.",
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "GPT-6 Sol",
+    "lab": "OpenAI",
+    "inputPerMtok": 2,
+    "outputPerMtok": 10,
+    "cachedInputPerMtok": 0.2,
+    "contextTokens": 1050000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "GPT-6.1 Sol",
+    "lab": "OpenAI",
+    "inputPerMtok": 2,
+    "outputPerMtok": 10,
+    "cachedInputPerMtok": 0.1,
+    "contextTokens": 1050000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "GPT-6 Luna",
+    "lab": "OpenAI",
+    "inputPerMtok": 0.1,
+    "outputPerMtok": 0.5,
+    "cachedInputPerMtok": 0.01,
+    "contextTokens": 1050000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "lightweight"
+  },
+  {
+    "model": "GPT-5.6 Sol",
+    "lab": "OpenAI",
+    "inputPerMtok": 4,
+    "outputPerMtok": 20,
+    "cachedInputPerMtok": 0.4,
+    "contextTokens": 272000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "GPT-5.6 Terra",
+    "lab": "OpenAI",
+    "inputPerMtok": 2,
+    "outputPerMtok": 12,
+    "cachedInputPerMtok": 0.2,
+    "contextTokens": 272000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "GPT-5.6 Luna",
+    "lab": "OpenAI",
+    "inputPerMtok": 0.2,
+    "outputPerMtok": 1.2,
+    "cachedInputPerMtok": 0.02,
+    "contextTokens": 272000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "lightweight"
+  },
+  {
+    "model": "GPT-5.5",
+    "lab": "OpenAI",
+    "inputPerMtok": 5,
+    "outputPerMtok": 30,
+    "cachedInputPerMtok": 0.5,
+    "contextTokens": 272000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "GPT-5.3-Codex",
+    "lab": "OpenAI",
+    "inputPerMtok": 1.75,
+    "outputPerMtok": 14,
+    "cachedInputPerMtok": 0.175,
+    "contextTokens": 272000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "notes": "Coding-specialized model.",
+    "countryOfOrigin": "US",
+    "reasoningLevel": "specialized"
+  },
+  {
+    "model": "Gemini 3.1 Pro",
+    "lab": "Google",
+    "inputPerMtok": 2,
+    "outputPerMtok": 12,
+    "cachedInputPerMtok": 0.2,
+    "contextTokens": 200000,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Gemini 3.1 Pro (>200k)",
+    "lab": "Google",
+    "inputPerMtok": 4,
+    "outputPerMtok": 18,
+    "cachedInputPerMtok": 0.4,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "notes": "Long-context rate card.",
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "Gemini 3.8 Flash",
+    "lab": "Google",
+    "inputPerMtok": 0.75,
+    "outputPerMtok": 3.5,
+    "cachedInputPerMtok": 0.075,
+    "contextTokens": 1050000,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Gemini 3.7 Flash",
+    "lab": "Google",
+    "inputPerMtok": 0.75,
+    "outputPerMtok": 3.5,
+    "cachedInputPerMtok": 0.075,
+    "contextTokens": 1050000,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Gemini 3.6 Flash",
+    "lab": "Google",
+    "inputPerMtok": 1.5,
+    "outputPerMtok": 7.5,
+    "cachedInputPerMtok": 0.15,
+    "contextTokens": 1050000,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Gemini 3.5 Flash",
+    "lab": "Google",
+    "inputPerMtok": 1.5,
+    "outputPerMtok": 9,
+    "cachedInputPerMtok": 0.15,
+    "contextTokens": 1048576,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Gemini 3.1 Flash-Lite",
+    "lab": "Google",
+    "inputPerMtok": 0.125,
+    "outputPerMtok": 0.75,
+    "cachedInputPerMtok": 0.013,
+    "contextTokens": 1048576,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "lightweight"
+  },
+  {
+    "model": "Gemini 3 Flash",
+    "lab": "Google",
+    "inputPerMtok": 0.5,
+    "outputPerMtok": 3,
+    "cachedInputPerMtok": 0.05,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Gemini 3.1 Flash",
+    "lab": "Google",
+    "inputPerMtok": 0.75,
+    "outputPerMtok": 3.75,
+    "cachedInputPerMtok": 0.075,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "notes": "Introductory rate through 2026-12-31; rises to $1.50/$7.50 in 2027.",
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Grok 4.7",
+    "lab": "xAI",
+    "inputPerMtok": 2,
+    "outputPerMtok": 6,
+    "cachedInputPerMtok": 0.5,
+    "contextTokens": 500000,
+    "availableVia": [
+      "xai-api",
+      "cursor",
+      "github-copilot",
+      "opencode-zen"
+    ],
+    "notes": "Long-context (>=200k) re-prices the entire request at $4/$12.",
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "Grok 4.6",
+    "lab": "xAI",
+    "inputPerMtok": 2,
+    "outputPerMtok": 6,
+    "cachedInputPerMtok": 0.5,
+    "contextTokens": 500000,
+    "availableVia": [
+      "xai-api",
+      "cursor",
+      "github-copilot",
+      "opencode-zen"
+    ],
+    "notes": "Long-context (>=200k) re-prices the entire request at $4/$12.",
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "Grok 4.5",
+    "lab": "xAI",
+    "inputPerMtok": 2,
+    "outputPerMtok": 6,
+    "cachedInputPerMtok": 0.3,
+    "contextTokens": 500000,
+    "availableVia": [
+      "xai-api",
+      "cursor",
+      "github-copilot"
+    ],
+    "notes": "Long-context (>=200k) re-prices the entire request at $4/$12.",
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "Grok Build 0.1",
+    "lab": "xAI",
+    "inputPerMtok": 1,
+    "outputPerMtok": 2,
+    "cachedInputPerMtok": 0.2,
+    "contextTokens": 256000,
+    "availableVia": [
+      "xai-api",
+      "opencode-zen"
+    ],
+    "notes": "Coding-agent model.",
+    "countryOfOrigin": "US",
+    "reasoningLevel": "specialized"
+  },
+  {
+    "model": "Grok 4.3",
+    "lab": "xAI",
+    "inputPerMtok": 1.25,
+    "outputPerMtok": 2.5,
+    "cachedInputPerMtok": 0.2,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "xai-api",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "GLM 5.3",
+    "lab": "Z.ai",
+    "inputPerMtok": 1.4,
+    "outputPerMtok": 4.4,
+    "cachedInputPerMtok": 0.26,
+    "contextTokens": 262144,
+    "availableVia": [
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "China",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "GLM 5.3 Flash",
+    "lab": "Z.ai",
+    "inputPerMtok": 0.15,
+    "outputPerMtok": 0.5,
+    "cachedInputPerMtok": 0.03,
+    "contextTokens": 262144,
+    "availableVia": [
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "China",
+    "reasoningLevel": "lightweight"
+  },
+  {
+    "model": "GLM 5",
+    "lab": "Z.ai",
+    "inputPerMtok": 1,
+    "outputPerMtok": 3.2,
+    "cachedInputPerMtok": 0.2,
+    "contextTokens": 202752,
+    "availableVia": [
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "China",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Kimi K3",
+    "lab": "Moonshot AI",
+    "inputPerMtok": 3,
+    "outputPerMtok": 15,
+    "cachedInputPerMtok": 0.3,
+    "contextTokens": 1048576,
+    "availableVia": [
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "China",
+    "reasoningLevel": "powerful"
+  },
+  {
+    "model": "Kimi K2.7 Code",
+    "lab": "Moonshot AI",
+    "inputPerMtok": 0.95,
+    "outputPerMtok": 4,
+    "cachedInputPerMtok": 0.19,
+    "contextTokens": 262144,
+    "availableVia": [
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "China",
+    "reasoningLevel": "versatile"
+  },
+  {
+    "model": "Kimi K2.5",
+    "lab": "Moonshot AI",
+    "inputPerMtok": 0.6,
+    "outputPerMtok": 3,
+    "cachedInputPerMtok": 0.1,
+    "contextTokens": 262144,
+    "availableVia": [
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "China",
+    "reasoningLevel": "lightweight"
+  },
+  {
+    "model": "MiniMax M3",
+    "lab": "MiniMax",
+    "inputPerMtok": 0.3,
+    "outputPerMtok": 1.2,
+    "cachedInputPerMtok": 0.06,
+    "contextTokens": 262144,
+    "availableVia": [
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "China",
+    "reasoningLevel": "lightweight"
+  },
+  {
+    "model": "MiniMax M2.5",
+    "lab": "MiniMax",
+    "inputPerMtok": 0.3,
+    "outputPerMtok": 1.2,
+    "cachedInputPerMtok": 0.06,
+    "contextTokens": 196608,
+    "availableVia": [
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "China",
+    "reasoningLevel": "lightweight"
+  }
+]

@@ -1,0 +1,613 @@
+[
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "vendor": "GitHub / Microsoft",
+    "url": "https://github.com/features/copilot",
+    "summary": "Editor-native autocomplete and agent spread across VS Code, JetBrains, Visual Studio, Neovim and github.com; metered by monthly GitHub AI Credits with unlimited code completions.",
+    "pros": [
+      "Broadest IDE and platform coverage of any coding assistant",
+      "Code completions and next-edit suggestions stay unlimited on all paid plans",
+      "Access to multiple frontier models (OpenAI, Anthropic, Google) from one subscription",
+      "Strong organization and enterprise controls with pooled credits and spend budgets",
+      "Generous trial/free tier and free Pro for verified students and popular OSS maintainers"
+    ],
+    "cons": [
+      "All paid plans moved to usage-based AI Credits in 2026, so costs vary with model and context",
+      "Overage is billed at $0.01 per AI credit beyond the included allowance",
+      "Free tier is limited to automatic model selection (no explicit model choice)",
+      "Credit multipliers mean expensive models drain the allowance much faster"
+    ],
+    "primaryModels": [
+      "GPT-6.1 Sol",
+      "Claude Opus 5.5",
+      "Claude Sonnet 5.5",
+      "Gemini 3.8 Flash"
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "ai_credits",
+          "units": null,
+          "note": "Limited monthly AI credits; 2,000 code completions/mo; auto model selection only"
+        },
+        "limits": "Small monthly credit allowance",
+        "notes": "For individuals without Copilot through an org."
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 10,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "ai_credits",
+          "units": 1500,
+          "note": "1,000 base + 500 flex; extra usage at $0.01/credit"
+        },
+        "limits": "1,500 AI credits/mo",
+        "notes": "Free for verified teachers and popular OSS maintainers."
+      },
+      {
+        "name": "Pro+",
+        "priceMonthly": 39,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "ai_credits",
+          "units": 7000,
+          "note": "3,900 base + 3,100 flex"
+        },
+        "limits": "7,000 AI credits/mo"
+      },
+      {
+        "name": "Max",
+        "priceMonthly": 100,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "ai_credits",
+          "units": 20000,
+          "note": "10,000 base + 10,000 flex; priority access to premium models"
+        },
+        "limits": "20,000 AI credits/mo"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 19,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "ai_credits",
+          "units": 1900,
+          "note": "Per granted seat; pooled across the enterprise"
+        },
+        "limits": "1,900 AI credits/user/mo"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 39,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "ai_credits",
+          "units": 3900,
+          "note": "Per granted seat; pooled across the enterprise"
+        },
+        "limits": "3,900 AI credits/user/mo"
+      }
+    ]
+  },
+  {
+    "id": "anthropic-claude",
+    "name": "Claude",
+    "vendor": "Anthropic",
+    "url": "https://claude.com/pricing",
+    "summary": "Claude chat plus the Claude Code terminal/IDE agent, bundled on one shared usage pool across web, desktop, mobile and Code; API available for pay-as-you-go token billing.",
+    "pros": [
+      "Claude Code included on Pro and above at no separate charge",
+      "Strong agentic coding and long-context performance",
+      "Usage credits let you exceed plan limits at standard API rates with a spend cap",
+      "Simplified pricing with few tiers and a clear per-model API rate card"
+    ],
+    "cons": [
+      "No published fixed token allowance: limits are 5-hour session windows plus weekly caps",
+      "Opus and premium models have a separate, tighter limit than Sonnet",
+      "Model-level cost varies a lot (Opus ~5x Sonnet output cost)",
+      "Heavy agent use can exhaust Pro quickly and pushes you to Max"
+    ],
+    "primaryModels": [
+      "Claude Opus 5.5",
+      "Claude Sonnet 5.5",
+      "Claude Fable 5.1",
+      "Claude Haiku 5.5"
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "sessions",
+          "units": null,
+          "note": "Everyday usage; 200k context; model training opt-out available"
+        },
+        "limits": "Rolling 5-hour session allowance"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 20,
+        "priceAnnual": 200,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "sessions",
+          "units": null,
+          "note": "At least 5x Free per 5-hour window; includes Claude Code; ~40-80 Sonnet hours/week (Anthropic estimate)"
+        },
+        "limits": "5-hour session + weekly caps, shared across all surfaces",
+        "notes": "$17/mo when billed annually ($200 up front)."
+      },
+      {
+        "name": "Max 5x",
+        "priceMonthly": 100,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "sessions",
+          "units": null,
+          "note": "5x Pro per session; ~140-280 Sonnet hours/week + Opus access"
+        },
+        "limits": "5-hour session + weekly caps"
+      },
+      {
+        "name": "Max 20x",
+        "priceMonthly": 200,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "sessions",
+          "units": null,
+          "note": "20x Pro per session; ~240-480 Sonnet hours/week"
+        },
+        "limits": "5-hour session + weekly caps"
+      },
+      {
+        "name": "Team",
+        "priceMonthly": 25,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "sessions",
+          "units": null,
+          "note": "Per seat; premium seats get 5x standard seats"
+        },
+        "limits": "Shared seat-based pool",
+        "notes": "Seat price + usage at API rates for premium models."
+      }
+    ]
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "vendor": "Anysphere",
+    "url": "https://cursor.com/pricing",
+    "summary": "AI-native VS Code fork with best-in-class codebase indexing, a Composer agent, background agents and multi-model selection; credit-based billing.",
+    "pros": [
+      "Deep codebase indexing and multi-file agentic editing",
+      "Choose from top models (Anthropic, OpenAI, Google, xAI) in one editor",
+      "Familiar VS Code experience with low learning curve",
+      "Background/parallel agents for long-running tasks"
+    ],
+    "cons": [
+      "Credit-based billing means the advertised price is a floor, not a ceiling",
+      "Agent and complex edits burn credits quickly",
+      "No model-agnostic open ecosystem; tied to the Cursor editor",
+      "Heavy usage can cost far more than the $20 Pro plan"
+    ],
+    "primaryModels": [
+      "Claude Opus 5.5",
+      "GPT-5.6 Sol",
+      "Gemini 3.1 Pro",
+      "Grok 4.7"
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "requests",
+          "units": 50,
+          "note": "2,000 completions + 50 slow premium requests; 2-week Pro trial"
+        },
+        "limits": "50 slow premium requests/mo"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 20,
+        "priceAnnual": 192,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "ai_credits",
+          "units": null,
+          "note": "Unlimited completions + a $20 monthly credit pool"
+        },
+        "limits": "Credit-metered; expensive models drain faster",
+        "notes": "$16/mo when billed annually."
+      },
+      {
+        "name": "Pro+",
+        "priceMonthly": 60,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "ai_credits",
+          "units": null,
+          "note": "Approx. 3x Pro credits + Background Agents"
+        },
+        "limits": "Credit-metered"
+      },
+      {
+        "name": "Ultra",
+        "priceMonthly": 200,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "ai_credits",
+          "units": null,
+          "note": "Approx. 20x Pro credits + early access"
+        },
+        "limits": "Credit-metered"
+      },
+      {
+        "name": "Teams",
+        "priceMonthly": 40,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "ai_credits",
+          "units": null,
+          "note": "Per seat; central billing, admin console, SSO"
+        },
+        "limits": "Credit-metered per seat"
+      }
+    ]
+  },
+  {
+    "id": "openai-chatgpt",
+    "name": "ChatGPT / Codex",
+    "vendor": "OpenAI",
+    "url": "https://openai.com/ChatGPT/pricing",
+    "summary": "ChatGPT subscriptions (Free, Go, Plus, Pro, Business) bundled with Codex coding agent, plus a per-token API with the deepest set of OpenAI models.",
+    "pros": [
+      "Largest consumer mindshare and broad feature set (Codex, Work, agents)",
+      "Top-tier reasoning models on Pro tier",
+      "Mature, well-documented per-token API",
+      "Wide third-party integration and tool support"
+    ],
+    "cons": [
+      "Reasoning/Pro models are expensive per token",
+      "Subscription plans publish usage shapes, not fixed token counts",
+      "Many features gated behind the $200 Pro tier",
+      "Frequent model naming changes make tracking costs harder"
+    ],
+    "primaryModels": [
+      "GPT-6.1 Sol",
+      "GPT-6 Astra",
+      "GPT-6 Sol",
+      "GPT-5.3-Codex"
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "Limited access to a default model"
+        },
+        "limits": "Rate-limited"
+      },
+      {
+        "name": "Go",
+        "priceMonthly": 8,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "Low-cost entry tier; regional availability"
+        },
+        "limits": "Rate-limited",
+        "notes": "Verify current price/availability each month."
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 20,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "sessions",
+          "units": null,
+          "note": "Higher message/agent limits; newer models"
+        },
+        "limits": "Per-5-hour and weekly caps"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 200,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "sessions",
+          "units": null,
+          "note": "Unlimited-ish access to top reasoning models; longest Codex sessions"
+        },
+        "limits": "Highest individual caps"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 25,
+        "priceAnnual": 240,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "sessions",
+          "units": null,
+          "note": "Per seat; admin controls; data excluded from training"
+        },
+        "limits": "Per-seat caps"
+      }
+    ]
+  },
+  {
+    "id": "google-gemini",
+    "name": "Gemini",
+    "vendor": "Google",
+    "url": "https://gemini.google/subscriptions/",
+    "summary": "Google's consumer Gemini plans (AI Pro, AI Ultra) bundled with 1M-token context and Workspace integration, plus a competitive per-token Gemini API with a free tier.",
+    "pros": [
+      "Very large 1M-token context window",
+      "Competitive API pricing with a genuine free tier for developers",
+      "Tight integration with Google Workspace and Search",
+      "Strong multimodal (image/audio/video) support"
+    ],
+    "cons": [
+      "Consumer plan usage limits are opaque (multiples of AI Pro, not token counts)",
+      "Best agent limits restricted to Ultra tiers",
+      "API pricing has scheduled increases at the start of 2027",
+      "Fragmented branding (AI Plus / Pro / Ultra 5x / Ultra 20x)"
+    ],
+    "primaryModels": [
+      "Gemini 3.1 Pro",
+      "Gemini 3.8 Flash",
+      "Gemini 3.6 Flash",
+      "Gemini 3.1 Flash-Lite"
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "Basic access to a default model"
+        },
+        "limits": "Rate-limited"
+      },
+      {
+        "name": "AI Pro",
+        "priceMonthly": 19.99,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "Expanded access to Pro models; 1M-token context; Deep Research"
+        },
+        "limits": "Higher rate limits than Free (2x-4x)"
+      },
+      {
+        "name": "AI Ultra 5x",
+        "priceMonthly": 99.99,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "5x AI Pro limits; Deep Think; higher Antigravity agent limits"
+        },
+        "limits": "5x AI Pro rate limits"
+      },
+      {
+        "name": "AI Ultra 20x",
+        "priceMonthly": 199.99,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "20x AI Pro limits; highest Antigravity agent limits"
+        },
+        "limits": "20x AI Pro rate limits"
+      }
+    ]
+  },
+  {
+    "id": "opencode",
+    "name": "opencode",
+    "vendor": "opencode (open source)",
+    "url": "https://opencode.ai",
+    "summary": "Open-source, model-agnostic terminal/IDE coding agent. Free with your own API key, a low-cost Go plan for budget models, and Zen, a no-markup pay-as-you-go model gateway.",
+    "pros": [
+      "MIT-licensed and fully open source with 75+ providers",
+      "No vendor lock-in: bring your own key or run local models",
+      "Zen gateway charges provider rates with no markup",
+      "Lowest paid entry point of any tool here ($10/mo Go plan)"
+    ],
+    "cons": [
+      "With BYOK you pay raw API costs, which can exceed flat subscriptions at heavy use",
+      "No bundled frontier-model access on the free tier by default",
+      "Zen credit purchases carry card fees (4.4% + $0.30)",
+      "Go plan caps usage in 5-hour, weekly and monthly windows"
+    ],
+    "primaryModels": [
+      "Claude Opus 5.5",
+      "GPT-6 Astra",
+      "GLM 5.3",
+      "Kimi K3",
+      "MiniMax M3"
+    ],
+    "plans": [
+      {
+        "name": "Free (BYOK)",
+        "priceMonthly": 0,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "byok",
+          "units": null,
+          "note": "Fully featured with your own API key; includes some free models and local models"
+        },
+        "limits": "Limited only by your provider/keys"
+      },
+      {
+        "name": "Go",
+        "priceMonthly": 10,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "sessions",
+          "units": null,
+          "note": "Access to GLM 5.3, Kimi K3 and MiniMax M3 models"
+        },
+        "limits": "5-hour, weekly and monthly windows",
+        "notes": "$5 first month."
+      },
+      {
+        "name": "Zen",
+        "priceMonthly": 0,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "tokens",
+          "units": null,
+          "note": "Pay-as-you-go at provider rates, no markup; $20 minimum deposit"
+        },
+        "limits": "Metered per token",
+        "notes": "Black subscription tier currently paused."
+      }
+    ]
+  },
+  {
+    "id": "xai-grok",
+    "name": "Grok",
+    "vendor": "xAI",
+    "url": "https://x.ai/pricing",
+    "summary": "xAI's Grok assistant — real-time web/X search plus image and video generation — with Grok Build, a coding agent, and a per-token API (grok-4.7) resold through Cursor, GitHub Copilot, opencode Zen and others.",
+    "pros": [
+      "Frontier coding model (Grok 4.7) at $2/$6 per 1M tokens — competitive with GPT/Claude flagships",
+      "Broad routing: Cursor, GitHub Copilot, opencode Zen, Bedrock, OCI and OpenRouter",
+      "Real-time web and X search, with image/video generation on consumer plans",
+      "Cheap cached input ($0.50/Mtok) and a 1M-context model (Grok 4.3)",
+      "Free consumer tier (rate-limited)"
+    ],
+    "cons": [
+      "Consumer plan limits use relative wording, not fixed token/credit counts",
+      "Subscriptions do not include API usage — you pay per token on top",
+      "Crossing the 200k-token threshold re-prices the entire request (input and output roughly double)",
+      "Newest/fastest models reach Cursor/Grok Build before the public API",
+      "Billing is split between grok.com/X and the developer API"
+    ],
+    "primaryModels": [
+      "Grok 4.7",
+      "Grok 4.6",
+      "Grok Build 0.1",
+      "Grok 4.3"
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "Real-time web/X search (limited), voice, connectors"
+        },
+        "limits": "Rate-limited"
+      },
+      {
+        "name": "SuperGrok Lite",
+        "priceMonthly": 10,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "2x chat length, Grok Build, Expert, image/video"
+        },
+        "limits": "Rate-limited",
+        "notes": "Price not published by xAI; third-party estimate — verify at checkout."
+      },
+      {
+        "name": "SuperGrok",
+        "priceMonthly": 30,
+        "priceAnnual": 300,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "Grok 4.6, Grok Bot, higher limits, Expert, image/video"
+        },
+        "limits": "Rate-limited"
+      },
+      {
+        "name": "SuperGrok Plus",
+        "priceMonthly": 100,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "Significantly higher usage, 1080p video, priority access"
+        },
+        "limits": "Rate-limited"
+      },
+      {
+        "name": "SuperGrok Heavy",
+        "priceMonthly": 300,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "Highest usage/fastest, collaborating agents, X Premium+ included"
+        },
+        "limits": "Rate-limited",
+        "notes": "Price not published by xAI; third-party estimate — verify at checkout."
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 30,
+        "priceAnnual": null,
+        "currency": "USD",
+        "includedUsage": {
+          "kind": "unmetered",
+          "units": null,
+          "note": "Per seat; admin controls; no training on business content"
+        },
+        "limits": "Per-seat"
+      }
+    ]
+  }
+]
