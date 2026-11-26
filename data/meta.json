@@ -1,7 +1,7 @@
 {
   "title": "AI Provider Comparison",
   "currency": "USD",
-  "lastUpdated": "2026-10-12",
+  "lastUpdated": "2026-11-26",
   "schemaVersion": 1,
   "sources": [
     "https://docs.github.com/en/copilot/about-github-copilot/plans-for-github-copilot",
@@ -16,6 +16,9 @@
     "https://gemini.google/subscriptions/",
     "https://opencode.ai/docs/zen/",
     "https://x.ai/pricing",
-    "https://docs.x.ai/developers/pricing"
+    "https://docs.x.ai/developers/pricing",
+    "https://models.dev/api.json",
+    "https://openrouter.ai/api/v1/models",
+    "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
   ]
 }
