@@ -155,8 +155,8 @@ user has approved the result** (see AGENTS.md server-shutdown rule).
 
 - 7 providers seeded: `github-copilot`, `anthropic-claude`, `cursor`, `openai-chatgpt`,
   `google-gemini`, `xai-grok`, `opencode`.
-- 40 models seeded across Anthropic / OpenAI / Google / xAI / Z.ai / Moonshot AI / MiniMax labs.
-- 37 models carry a `sourceId` (refreshable); 3 are intentionally unmapped:
+- 50 models seeded across Anthropic / OpenAI / Google / xAI / Z.ai / Moonshot AI / MiniMax labs.
+- 47 models carry a `sourceId` (refreshable); 3 are intentionally unmapped:
   `Gemini 3.1 Pro (>200k)` (a model.dev tier variant), `Gemini 3.1 Flash` and `Kimi K2.5`
   (no exact feed entry).
 - Every provider `primaryModels` entry resolves to a `model` row in `data/models.json`.

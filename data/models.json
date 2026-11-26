@@ -84,6 +84,22 @@
     "sourceId": "models.dev:anthropic/claude-sonnet-5-5"
   },
   {
+    "model": "Claude Fable 5.2",
+    "lab": "Anthropic",
+    "inputPerMtok": 8,
+    "outputPerMtok": 40,
+    "cachedInputPerMtok": 0.2,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "anthropic-api",
+      "github-copilot",
+      "cursor"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "specialized",
+    "sourceId": "models.dev:anthropic/claude-fable-5-2"
+  },
+  {
     "model": "Claude Fable 5.1",
     "lab": "Anthropic",
     "inputPerMtok": 10,
@@ -147,6 +163,54 @@
     "countryOfOrigin": "US",
     "reasoningLevel": "lightweight",
     "sourceId": "models.dev:anthropic/claude-haiku-5-5"
+  },
+  {
+    "model": "GPT-6.2 Astra",
+    "lab": "OpenAI",
+    "inputPerMtok": 8,
+    "outputPerMtok": 40,
+    "cachedInputPerMtok": 0.4,
+    "contextTokens": 1050000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:openai/gpt-6.2-astra"
+  },
+  {
+    "model": "GPT-6.2 Sol",
+    "lab": "OpenAI",
+    "inputPerMtok": 2,
+    "outputPerMtok": 10,
+    "cachedInputPerMtok": 0.1,
+    "contextTokens": 1050000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:openai/gpt-6.2-sol"
+  },
+  {
+    "model": "GPT-6.1 Terra",
+    "lab": "OpenAI",
+    "inputPerMtok": 1,
+    "outputPerMtok": 5,
+    "cachedInputPerMtok": 0.05,
+    "contextTokens": 1050000,
+    "availableVia": [
+      "openai-api",
+      "github-copilot",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:openai/gpt-6.1-terra"
   },
   {
     "model": "GPT-6 Astra",
@@ -298,6 +362,74 @@
     "countryOfOrigin": "US",
     "reasoningLevel": "specialized",
     "sourceId": "models.dev:openai/gpt-5.3-codex"
+  },
+  {
+    "model": "Gemini 4 Neon",
+    "lab": "Google",
+    "inputPerMtok": 3,
+    "outputPerMtok": 15,
+    "cachedInputPerMtok": 0.15,
+    "contextTokens": 1048576,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:google/gemini-4-neon"
+  },
+  {
+    "model": "Gemini 4 Hydrogen",
+    "lab": "Google",
+    "inputPerMtok": 1.5,
+    "outputPerMtok": 7.5,
+    "cachedInputPerMtok": 0.075,
+    "contextTokens": 1048576,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:google/gemini-4-hydrogen"
+  },
+  {
+    "model": "Gemini 4 Carbon",
+    "lab": "Google",
+    "inputPerMtok": 2,
+    "outputPerMtok": 10,
+    "cachedInputPerMtok": 0.1,
+    "contextTokens": 1048576,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:google/gemini-4-carbon"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "lab": "Google",
+    "inputPerMtok": 2,
+    "outputPerMtok": 10,
+    "cachedInputPerMtok": 0.1,
+    "contextTokens": 1048576,
+    "availableVia": [
+      "gemini-api",
+      "github-copilot",
+      "cursor",
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "US",
+    "reasoningLevel": "versatile",
+    "sourceId": "models.dev:google/gemini-4-argon"
   },
   {
     "model": "Gemini 3.1 Pro",
@@ -578,6 +710,20 @@
     "sourceId": "models.dev:zai/glm-5"
   },
   {
+    "model": "Kimi K3.1 Pro",
+    "lab": "Moonshot AI",
+    "inputPerMtok": 2,
+    "outputPerMtok": 10,
+    "cachedInputPerMtok": 0.2,
+    "contextTokens": 1048576,
+    "availableVia": [
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "China",
+    "reasoningLevel": "powerful",
+    "sourceId": "models.dev:moonshotai/kimi-k3.1-pro"
+  },
+  {
     "model": "Kimi K3",
     "lab": "Moonshot AI",
     "inputPerMtok": 3,
@@ -617,6 +763,20 @@
     ],
     "countryOfOrigin": "China",
     "reasoningLevel": "lightweight"
+  },
+  {
+    "model": "MiniMax M3.1 Flash",
+    "lab": "MiniMax",
+    "inputPerMtok": 0.15,
+    "outputPerMtok": 0.6,
+    "cachedInputPerMtok": 0.015,
+    "contextTokens": 1000000,
+    "availableVia": [
+      "opencode-zen"
+    ],
+    "countryOfOrigin": "China",
+    "reasoningLevel": "lightweight",
+    "sourceId": "models.dev:minimax/MiniMax-M3.1-Flash"
   },
   {
     "model": "MiniMax M3",
